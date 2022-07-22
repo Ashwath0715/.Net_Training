@@ -9,8 +9,8 @@ namespace oops
 
     class HRDepartment
     {
-        public string location;
         public string work;
+        public string location;
         public void Manage()
         {
 
