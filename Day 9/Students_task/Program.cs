@@ -30,10 +30,10 @@ namespace Students_task
         public static void Main(string[] args)
         {
             string ch;
-            Console.WriteLine("\n\tSTUDENT MANAGEMENT SYSTEM");
+            Console.WriteLine("\n\tSTUDENT DETAILS");
             Console.WriteLine("----------------------------------------");
 
-            Console.WriteLine("1. Create Student\n2. Update Student\n3. Delete Student\n4. Exit\n");
+            Console.WriteLine("1. Create Student\n2. Update Student\n3. Delete Student\n4. View Student\n5. Exit\n");
 
             do
             {
@@ -53,6 +53,9 @@ namespace Students_task
                     case 3:
                         deleteStudent(); break;
 
+                    case 4:
+                        enterSno();
+                        viewStudent(sno); break;
 
                     default:
                         Console.Write("\nInvalid Choice");
@@ -61,7 +64,7 @@ namespace Students_task
 
                 do
                 {
-                    Console.Write("\n\nDo you want to continue , Say (yes or no)");
+                    Console.Write("\n\nDo you want to continue to the Application, Say (yes or no) ");
                     ch = Console.ReadLine().Trim().ToLower();
 
                     if (ch != "yes" && ch != "no")
@@ -77,8 +80,8 @@ namespace Students_task
 
         public static void enterDetails()
         {
-            Console.WriteLine("\n\nPlease provide the details");
-            Console.WriteLine("---------------------------------------------");
+            Console.WriteLine("\n\nPlease provide the details below");
+            Console.WriteLine("------------------------------------------------");
 
             enterSno();
             enterName();
@@ -123,7 +126,7 @@ namespace Students_task
             else
             {
                 Console.WriteLine("\n\nStudent Details");
-                Console.WriteLine("------------------------------------");
+                Console.WriteLine("-----------------------------------------------");
                 Console.WriteLine($"Sno : {student.sno}\nName : {student.name}\nCity : {student.city}\nTotal Marks : {student.totalMarks}");
 
                 Console.WriteLine("\n1. Update Sno\n2. Update Name\n3. Update City\n4. Update Total Marks\n");
@@ -131,7 +134,7 @@ namespace Students_task
 
                 do
                 {
-                    Console.Write("\nSelect the property which you want to update : ");
+                    Console.Write("\nSelect the detail which you want to update : ");
 
                     int choice = int.Parse(Console.ReadLine());
 
@@ -159,7 +162,7 @@ namespace Students_task
 
                     do
                     {
-                        Console.WriteLine("\n\nDo you want to continue to update , Say (yes or no)");
+                        Console.WriteLine("\n\nDo you want to continue to update, Say (yes or no)");
                         ch = Console.ReadLine().Trim().ToLower();
 
                         if (ch != "yes" && ch != "no")
@@ -187,11 +190,31 @@ namespace Students_task
 
         }
 
+        public static Student viewStudent(int sno)
+        {
+            Student student = students.Find(x => x.sno == sno);
 
+            if (student == null)
+            {
+                Console.WriteLine("\n\n\t *No matchng records found...");
+                return null;
+            }
+            else
+            {
+                Console.WriteLine("\n\nStudent Details");
+                Console.WriteLine("--------------------------------------------");
+
+                Console.WriteLine($"Sno : {student.sno}\nName : {student.name}\nCity : {student.city}\nTotal Marks : {student.totalMarks}");
+
+                return student;
+            }
 
         }
 
+    
 
 
     }
 
+
+}
