@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Generic_List", "..\Generic_
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GenericDictionary", "..\GenericDictionary\GenericDictionary.csproj", "{61F73976-CA64-4809-8D51-CAFC431592C8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Generic_SortedList", "..\Generic_SortedList\Generic_SortedList.csproj", "{C62A2CE7-C125-4A03-A1C0-10E42008EB5D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{61F73976-CA64-4809-8D51-CAFC431592C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{61F73976-CA64-4809-8D51-CAFC431592C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{61F73976-CA64-4809-8D51-CAFC431592C8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C62A2CE7-C125-4A03-A1C0-10E42008EB5D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C62A2CE7-C125-4A03-A1C0-10E42008EB5D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C62A2CE7-C125-4A03-A1C0-10E42008EB5D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C62A2CE7-C125-4A03-A1C0-10E42008EB5D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
