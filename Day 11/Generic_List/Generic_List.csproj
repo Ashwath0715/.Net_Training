@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{8800FF7E-DADA-439E-BB92-D8D502ED178B}</ProjectGuid>
+    <ProjectGuid>{771D6A52-5802-4C33-ABFE-8E3089997779}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>OOPS_task</RootNamespace>
-    <AssemblyName>OOPS_task</AssemblyName>
+    <RootNamespace>Generic_List</RootNamespace>
+    <AssemblyName>Generic_List</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,9 +43,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Department.cs" />
-    <Compile Include="Employee.cs" />
-    <Compile Include="HRManagement.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
