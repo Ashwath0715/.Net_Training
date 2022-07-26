@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{6D63D835-C90B-44D3-B0B5-D614F688DB03}</ProjectGuid>
+    <ProjectGuid>{B0E85510-F0CD-46A4-9D0A-B8F46444E92B}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Exception_task</RootNamespace>
-    <AssemblyName>Exception_task</AssemblyName>
+    <RootNamespace>MultiCastDelegate_demo</RootNamespace>
+    <AssemblyName>MultiCastDelegate_demo</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,9 +43,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Chair.cs" />
-    <Compile Include="Cot.cs" />
-    <Compile Include="MyException.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

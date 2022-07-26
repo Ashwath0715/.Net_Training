@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{6D63D835-C90B-44D3-B0B5-D614F688DB03}</ProjectGuid>
+    <ProjectGuid>{C09222DA-002C-460D-9602-2E828E4E08C7}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Exception_task</RootNamespace>
-    <AssemblyName>Exception_task</AssemblyName>
+    <RootNamespace>AnonymousMethod_demo</RootNamespace>
+    <AssemblyName>AnonymousMethod_demo</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,9 +43,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Chair.cs" />
-    <Compile Include="Cot.cs" />
-    <Compile Include="MyException.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
