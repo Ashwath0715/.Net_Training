@@ -1,0 +1,30 @@
+create table Employee
+(
+id int null,
+name nvarchar(50),
+city nvarchar(40),
+mailid nvarchar(100),
+dob date
+)
+Go
+
+select * from Employee
+insert into Employee values(101,'Rajesh','mumbai','rajesh@gmail.com',12-10-1999)
+insert into Employee values(102,'Shivam','pune','Shivam@globallogic.com',15-10-2001)
+insert into Employee values(103,'ajay','roorkee','ajay@ymail.com',19-10-2001)
+insert into Employee values(104,'shrija','nagpur','shrija@gmail.com',10-01-2000)
+insert into Employee values(105,'vishwa','ahemedabad','cishwa@globallogic.com',10-11-2001)
+insert into Employee values(106,'vishal','bangalore','vishal@ymail.com',21-03-2001)
+insert into Employee values(107,'rashmi','haldwani','rasmi@ymail.com',10-11-2001)
+insert into Employee values(108,'raj','chennai','raj@globallogic.com',10-11-2000)
+insert into Employee values(109,'ramesh','dehradun','ramesh111@gmail.com',10-11-2003)
+insert into Employee values(110,'Kunjan','chennai','Kunjan@ymail.com',10-11-2002)
+
+select len(mailid) from EMPLOYEE
+select distinct SUBSTRING(mailid,CHARINDEX('@',mailid)+1,
+len(mailid)-4-CHARINDEX('@',mailid)) as domain from Employee
+
+select SUBSTRING(mailid,CHARINDEX('@',mailid)+1,
+len(mailid)-4-CHARINDEX('@',mailid)) as domain,count(mailid) as frequency
+from Employee group by SUBSTRING(mailid,CHARINDEX('@',mailid)+1,
+len(mailid)-4-CHARINDEX('@',mailid))
